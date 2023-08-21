@@ -1,7 +1,7 @@
-import first.Dog;
+import two.TestScore;
 
 public class Main {
     public static void main(String[] args) {
-        Dog.printDog();
+        TestScore.yourScoreIs();
     }
 }

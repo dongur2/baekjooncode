@@ -1,4 +1,4 @@
-package first;
+package one;
 
 public class Cat {
     public static void printCat() {

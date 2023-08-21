@@ -1,4 +1,4 @@
-package first;
+package one;
 
 public class HelloWorld {
     public static void helloWorld() {

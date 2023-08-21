@@ -1,9 +1,9 @@
-package first;
+package one;
 
 import java.util.Scanner;
 
-public class APlusB {
-    public static void aPlusB() {
+public class AMinusB {
+    public static void aMinusB() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -13,7 +13,6 @@ public class APlusB {
         Integer a = Integer.parseInt(inputs[0]);
         Integer b = Integer.parseInt(inputs[1]);
 
-        System.out.println(a + b);
-
+        System.out.println( a - b );
     }
 }
