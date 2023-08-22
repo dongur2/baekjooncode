@@ -1,9 +1,7 @@
-import two.LeapYear;
-import two.PickQuadrant;
-import two.TestScore;
+import two.*;
 
 public class Main {
     public static void main(String[] args) {
-        PickQuadrant.whichIsQuadrant();
+        ThreeDices.getReward();
     }
 }
