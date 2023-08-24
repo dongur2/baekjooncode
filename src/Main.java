@@ -1,7 +1,7 @@
-import two.*;
+import three.*;
 
 public class Main {
     public static void main(String[] args) {
-        ThreeDices.getReward();
+        CodingIsPE.whatIsNameOfByte();
     }
 }
