@@ -1,5 +1,4 @@
-import Four.*;
-import three.*;
+import four.*;
 
 import java.io.IOException;
 

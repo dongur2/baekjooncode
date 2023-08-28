@@ -1,24 +1,31 @@
-package Four;
+package four;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Counting {
+public class SmallerThanX {
     public static void getCounting() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int N = Integer.parseInt(br.readLine());
         StringTokenizer input = new StringTokenizer(br.readLine());
-        int v = Integer.parseInt(br.readLine());
+        int N = Integer.parseInt(input.nextToken());
+        int X = Integer.parseInt(input.nextToken());
 
-        int count = 0;
+        input = new StringTokenizer(br.readLine());
+
+        int arr[] = new int[N];
         for(int i=0; i<N; i++) {
             int value = Integer.parseInt(input.nextToken());
-            if( v == value ) count++;
+            arr[i] = value;
         }
 
-        bw.write(count+"");
+        for(int j=0; j<arr.length; j++) {
+            if(arr[j] < X) {
+                bw.write(arr[j]+" ");
+            }
+        }
+
         bw.close();
         br.close();
     }

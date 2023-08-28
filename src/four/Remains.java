@@ -1,4 +1,4 @@
-package Four;
+package four;
 
 import java.io.*;
 import java.util.StringTokenizer;
