@@ -1,11 +1,12 @@
-import six.Croatia;
-import six.GroupWords;
-import six.YourScoreIs;
+import seven.Coloredpaper;
+import seven.MatrixAddition;
+import seven.Max;
+import seven.VerticalReading;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        YourScoreIs.getScore();
+        Coloredpaper.getResult();
     }
 }
