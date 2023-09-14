@@ -62,49 +62,30 @@ public class PaintChessBoard {
                 for (int l = startColumn; l < startColumn + 8; l += 2) {
                     if (!states[j][l].equals(start)) {
                         countOrigin++;
-                    }
-                }
-                for (int l = startColumn + 1; l < startColumn + 8; l += 2) {
-                    if (states[j][l].equals(start)) {
-                        countOrigin++;
-                    }
-                }
-            }
-            for (int j = startRow + 1; j < startRow + 8; j += 2) {
-                for (int l = startColumn; l < startColumn + 8; l += 2) {
-                    if (states[j][l].equals(start)) {
-                        countOrigin++;
-                    }
-                }
-                for (int l = startColumn + 1; l < startColumn + 8; l += 2) {
-                    if (!states[j][l].equals(start)) {
-                        countOrigin++;
-                    }
-                }
-            }
-
-
-            // 시작한 색깔을 수정할 경우
-            for (int j = startRow; j < startRow + 8; j += 2) {
-                for (int l = startColumn; l < startColumn + 8; l += 2) {
-                    if (states[j][l].equals(start)) {
+                    } else {
                         countChange++;
                     }
                 }
                 for (int l = startColumn + 1; l < startColumn + 8; l += 2) {
-                    if (!states[j][l].equals(start)) {
+                    if (states[j][l].equals(start)) {
+                        countOrigin++;
+                    } else {
                         countChange++;
                     }
                 }
             }
             for (int j = startRow + 1; j < startRow + 8; j += 2) {
                 for (int l = startColumn; l < startColumn + 8; l += 2) {
-                    if (!states[j][l].equals(start)) {
+                    if (states[j][l].equals(start)) {
+                        countOrigin++;
+                    } else {
                         countChange++;
                     }
                 }
                 for (int l = startColumn + 1; l < startColumn + 8; l += 2) {
-                    if (states[j][l].equals(start)) {
+                    if (!states[j][l].equals(start)) {
+                        countOrigin++;
+                    } else {
                         countChange++;
                     }
                 }
@@ -117,7 +98,7 @@ public class PaintChessBoard {
         // 비교해서 최솟값 출력
         int minO = countOrigins[0];
         int minC = countChanges[0];
-        
+
         for (int i = 0; i < countOrigins.length; i++) {
             if (minO > countOrigins[i]) {
                 minO = countOrigins[i];
