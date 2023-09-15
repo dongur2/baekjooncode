@@ -1,9 +1,9 @@
-import twelve.*;
+import thirteen.SortNumbers2;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException{
-        SugarDelivery.getResult();
+        SortNumbers2.getResult();
     }
 }
