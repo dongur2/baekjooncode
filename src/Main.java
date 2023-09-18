@@ -1,4 +1,4 @@
-import thirteen.*;
+import steps.thirteen.*;
 
 import java.io.IOException;
 
