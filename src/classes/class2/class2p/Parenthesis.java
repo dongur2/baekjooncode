@@ -10,8 +10,8 @@ public class Parenthesis {
         int T = Integer.parseInt(br.readLine());
         for (int i = 0; i < T; i++) {
             String input = br.readLine();
-            while (input.contains("()")) { // 문자열에는 ()
-                input = input.replaceAll("\\(\\)", "").trim(); // reges에는 \\(\\)
+            while (input.contains("()")) { // 문자열(String)에는 ()
+                input = input.replaceAll("\\(\\)", "").trim(); // regex(char)에는 \\(\\)
             }
 
             if (!input.isEmpty()) {
